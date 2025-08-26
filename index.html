@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+    <link rel="manifest" href="./icon/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="esconder_form()"></div>
+   
+    <header>
+        <img src="img/logo-header.png" alt="logo-header">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a>Fale Conosco</a>
+    </header>
+   
+    <div class="caixa-video">
+        <video autoplay muted loop src="img/video.mp4"></video>
+        <div class="mascara-video"></div>
+    </div>
+    
+    <div class="container">      
+        <div class="caixa-principal">
+            <img src="img/logo.png" alt="logo do mario bros" class="logo-mario">
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, 
+                canos entupidos ou torneiras que não param de pingar?
+                Não se preocupe, porque estamos aqui para salvar o dia! 
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+            
+            <button onclick="mostrar_form()">Entre em contato</button>
+        </div>
+        
+        <img src="img/mario e luigi.png" alt="mario e luigi" class="mario-luigi">
+        
+        <a href="https://wa.me/5518997196088?text=Ola%2C%20Preciso%20do%20seu%20servi%C3%A7os" 
+        target=blank class="link-whats">
+        <img src="img/whatsapp.png" alt="whatsapp">
+        </a>
+        
+        <form class="formulario-fale-conosco" 
+            action="https://formcarry.com/s/IofAe-o9gB6" 
+            method="POST"
+            enctype="multipart/form-data">
+            <input placeholder="Seu Nome" type="text" name="nome">
+            <input placeholder="Seu Telefone" type="tel" name="telefone">
+            <textarea placeholder="Digite seu Problema aqui..." name="duvida"></textarea>
+            <button type="submit">Pedir Orçamento</button>
+        </form>
+    </div>
+</body>
+
+<script src="scripts.js"> </script>
+
+</html>
